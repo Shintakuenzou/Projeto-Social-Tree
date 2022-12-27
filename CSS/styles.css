@@ -27,6 +27,7 @@
 }
 
 body {
+    height: 100vh;
     background: var(--bg-darkMode) no-repeat top center/cover;
     font-family: 'Inter', sans-serif;
     color: var(--text-color);
@@ -77,6 +78,12 @@ body {
     transform: translateY(-50%);
     z-index: 1;
 
+    animation: slide-back .3s;
+
+}
+
+#switch button:hover{
+    outline: 8px solid var(--surface-color-hover);
 }
 
 #switch span{
@@ -91,7 +98,7 @@ body {
 
 
 .light #switch button{
-    right: 0;
+    animation: slide-in 0.3s forwards;
 }
 ul {
     display: flex;
@@ -177,4 +184,30 @@ footer {
 
 footer a {
     color: #8257E5;
+}
+
+@media (min-width: 700) {
+    :root{
+        --bg-url: url(../assets/Bg-Desktop-Dark-Mode.jpg);
+    }
+
+    .light{
+        --bg-url: url(../assets/Bg-Desktop-Light-Mode.jpg);
+    }
+}
+
+@keyframes slide-in {
+    from{
+        left: 0;
+    }
+    to{left: 50%;}
+}
+@keyframes slide-back {
+    from {
+        left: 50%;
+    }
+
+    to {
+        left: 0;
+    }
 }
