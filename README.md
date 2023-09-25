@@ -34,7 +34,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 ## 💻 Projeto
 
 O DevLinks é um agregador de links para usar como cartão de visitas online.
-- [Acesse aqui o projeto finalizado, online] (https://projeto-social-tree.vercel.app/)
+- [Acesse aqui o projeto finalizado, online](https://projeto-social-tree.vercel.app/)
 
 
 ## 🔖 Layout
